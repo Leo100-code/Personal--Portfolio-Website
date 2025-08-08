@@ -1,0 +1,20 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleBtn = document.createElement("button");
+  toggleBtn.innerText = "Toggle Theme";
+  toggleBtn.style.position = "fixed";
+  toggleBtn.style.bottom = "20px";
+  toggleBtn.style.right = "20px";
+  toggleBtn.style.padding = "10px 15px";
+  toggleBtn.style.border = "none";
+  toggleBtn.style.borderRadius = "5px";
+  toggleBtn.style.backgroundColor = "#00ffd5";
+  toggleBtn.style.color = "#000";
+  toggleBtn.style.cursor = "pointer";
+  toggleBtn.style.zIndex = "9999";
+
+  document.body.appendChild(toggleBtn);
+
+  toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("light-theme");
+  });
+});
